@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a web developer focused on creating modern and responsive websites.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\IMG-20240323-WA0017.jpg" alt="Profile Picture">
+                <div>
+                    <h3>Hi, I'm Arnav Kalambe</h3>
+                    <p>I am a Student of Symbiosis institute of technology. Currently pursuing the degree Btech CSE.</p>
+                    <p>As a web developer, my primary focus is to craft visually appealing and highly functional websites that cater to the ever-evolving digital landscape. I specialize in building modern and responsive web applications that ensure an optimal user experience across a wide range of devices and screen sizes. I am also a football player, played nationally for my football club and also represented Symbiosis Institute of Technology in football at Pune.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>My Portfolio</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="C:\Users\ASUS\OneDrive\Desktop\landing.png" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>Tanding page.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="C:\Users\ASUS\OneDrive\Desktop\temp.png" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Project 2</h3>
+                        <p>Temperature Converter.</p>
+                    </div>
+                </div>
+                <!-- Add more project items -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Arnav Kalambe</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').innerText = new Date().getFullYear();
+    </script>
+</body>
+</html>
